@@ -1,5 +1,5 @@
 """
-ASGI config for Shu_Hole project.
+ASGI config for Shu_Hole_BE project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Shu_Hole.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Shu_Hole_BE.settings')
 
 application = get_asgi_application()
