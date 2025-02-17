@@ -12,6 +12,7 @@ class RegisterUser(models.Model):
     image = models.ImageField(upload_to='image/',blank=True,null=True)
 
 
+
 class Meta:
     managed = True
     db_table = 'RegisterUser'
