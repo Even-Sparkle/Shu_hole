@@ -7,5 +7,11 @@ from django.db import models
 class RegisterUser(models.Model):
     username = models.CharField(max_length=20, blank=False, unique=True)
     password = models.CharField(max_length=20, blank=False, unique=True)
+    phone = models.CharField(max_length=20, blank=False, unique=True)
+    email = models.CharField(max_length=20, blank=False, unique=True)
+    image = models.ImageField(upload_to='image/',blank=True,null=True)
 
 
+class Meta:
+    managed = True
+    db_table = 'RegisterUser'
